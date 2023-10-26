@@ -21,7 +21,7 @@ export class ExpenseDashboardComponent implements OnInit {
   ngOnInit(): void {
     this._expenseService.get().subscribe((data) => {
       this.items = [...data];
-      
+
     })
   }
 
@@ -35,7 +35,7 @@ export class ExpenseDashboardComponent implements OnInit {
       this.items = [...data];
     })
     this.newEvent.emit(true);
-    alert("delete successful")
+    alert("delete successful! Please refresh page")
   }
 
 
