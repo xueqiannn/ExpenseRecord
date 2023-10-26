@@ -1,29 +1,29 @@
 <div class="container">
   <h1>Expense List</h1>
-  <table class="formDiv">
-    <div>
-      <div class="formLine">
-        <div class="line">
-            <span> Type</span>
-            <span> Description</span>
-            <span> Amount</span>
-            <span> Date </span>
-            <span> Action</span>
-        </div>
-      </div>
-    </div>
-    <div *ngFor="let item of items">
-      <div class="formLine">
-        <div class="line">
-            <span> {{item.type}}</span>
-            <span> {{item.description}}</span>
-            <span> {{item.amount}}</span>
-            <span> {{item.date |  date:"yyyyMMdd"  }}</span>
-            <button class="deleteButton" (click)="delete(item.id)">Delete</button>
-        </div>
-      </div>
-    </div>
-  </table>
-  <!-- <button class="createButton" routerLink="/edit">Create Item</button> -->
+  <div class="formDiv">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Type</th>
+          <th scope="col">Description</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Date</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <th scope="row">{{item.type}}</th>
+          <td>{{item.description}}</td>
+          <td>{{item.amount}}</td>
+          <td>{{item.date | date:"yyyyMMdd" }}</td>
+          <button class="deleteButton" (click)="delete(item.id)">Delete</button>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
   <button class="createButton" (click)="add()">Add</button>
+
 </div>

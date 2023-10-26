@@ -31,16 +31,14 @@ export class ExpenseDashboardComponent implements OnInit {
 
   delete(id:string){
     this._expenseService.delete(id).subscribe(()=>{
-      this.newEvent.emit(true);
+      // this.newEvent.emit(true);
       this._expenseService.get().subscribe((data) => {
         this.items = [...data];
       })
     }
     );
 
-
-
-    alert("delete successful! Please refresh page")
+    alert("delete successful!")
   }
 
 

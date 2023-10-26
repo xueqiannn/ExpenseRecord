@@ -24,70 +24,6 @@ h1 {
 
 }
 
-.searchDiv {
-  height: 36px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.reloadButton {
-  width: 80px;
-  height: 36px;
-  padding: 10px;
-  border-radius: 4px;
-  border: solid 1px;
-  border-color: #C7D0D8;
-
-  font-family: SLB Sans;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #6B7885;
-}
-
-.searchInput {
-  height: 36px;
-  width: 80%;
-  border-radius: 4px;
-  border: solid 1px;
-  border-color: #C7D0D8;
-
-
-  font-family: SLB Sans;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #39414D;
-
-}
-
-.filterDiv {
-  display: flex;
-  justify-content: space-between;
-  height: 24px;
-}
-
-.filterButton {
-  width: 80px;
-  height: 100%;
-  border-radius: 4px;
-  border: solid 1px;
-  border-color: #C7D0D8;
-
-  font-family: SLB Sans;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #6B7885;
-}
-
 .deleteButton{
   width: 50px;
   height: 24px;
@@ -110,39 +46,6 @@ h1 {
   overflow: auto;
 }
 
-.formLine {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 56px;
-  border-style: solid;
-  border-bottom-width: 1px;
-  border-top-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-color:#C7D0D8;
-
-}
-
-
-.formLine label {
-  width: 394px;
-  height: 16px;
-
-  font-family: SLB Sans;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.47999998927116394px;
-  text-align: left;
-
-}
-
-.line{
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: space-around;
-}
 
 .createButton {
   height: 36px;
@@ -156,8 +59,4 @@ h1 {
   line-height: 16px;
   text-align: center;
   color: #FFFFFF
-}
-
-.active{
-  background-color: gainsboro;
 }
