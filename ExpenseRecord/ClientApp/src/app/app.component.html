@@ -1,1 +1,10 @@
-<app-greeting></app-greeting>
+<!-- <app-greeting></app-greeting>
+<app-counter-component></app-counter-component> -->
+
+<ng-container *ngIf="showExpenseList">
+  <app-expense-dashboard [items]="items" (newEvent)="showEditPage($event)"></app-expense-dashboard>
+</ng-container>
+
+<ng-container *ngIf="!showExpenseList">
+  <app-expense-edit (newEvent)="showListPage($event)"></app-expense-edit>
+</ng-container>

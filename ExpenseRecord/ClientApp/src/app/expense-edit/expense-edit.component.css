@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: 740px;
+  padding: 20px;
+  border-radius: 8px;
+  border: solid 1px;
+}
+
+.backButton {
+
+  width: 130px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 4px;
+  border: solid 1px;
+  border-color: #C7D0D8;
+
+  font-family: SLB Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6B7885;
+}
+.formDiv {
+  height: 80%;
+}
+
+.formLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 56px;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-color:#C7D0D8;
+
+}
+
+.editBox{
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  height: 40px;
+  width: 90%;
+  line-height: 40px;
+}
+
+.footerDiv{
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+  text-align: center;
+}
+
+.deleteButton{
+  background-color: red;
+  border-radius: 4px;
+  border: 1px;
+  color: white;
+  width: 80px;
+  /* color:"Warn" */
+  font-weight: 700;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: SLB Sans;
+  font-size: 14px;
+}
+
+.saveButton{
+  width: 80px;
+  /* height: 50px; */
+  border-radius: 4px;
+  border: solid 1px;
+  border-color: #C7D0D8;
+
+  font-family: SLB Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6B7885;
+}

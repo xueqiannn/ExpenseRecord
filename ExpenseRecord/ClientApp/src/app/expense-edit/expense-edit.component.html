@@ -1,0 +1,36 @@
+<div class="container">
+
+  <button class="backButton" (click)="back()"><span class="arrow-left">&#8592;</span> Back to list</button>
+
+  <form  class="formDiv">
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" class="form-control" id="type" required
+      [(ngModel)]="model.type" name="type">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description"
+      [(ngModel)]="model.description" name="description">
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="text" class="form-control" id="amount"
+      [(ngModel)]="model.amount" name="amount">
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" class="form-control" id="date"
+      [(ngModel)]="model.date" name="date">
+    </div>
+
+  </form>
+  <div class="footerDiv">
+
+    <button class="saveButton" (click)="save()">Save</button>
+  </div>
+
+</div>

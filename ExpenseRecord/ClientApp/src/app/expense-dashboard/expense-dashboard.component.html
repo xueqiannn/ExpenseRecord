@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Expense List</h1>
+  <table class="formDiv">
+    <div>
+      <div class="formLine">
+        <div class="line">
+            <span> Type</span>
+            <span> Description</span>
+            <span> Amount</span>
+            <span> Date </span>
+            <span> Action</span>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let item of items">
+      <div class="formLine">
+        <div class="line">
+            <span> {{item.type}}</span>
+            <span> {{item.description}}</span>
+            <span> {{item.amount}}</span>
+            <span> {{item.date |  date:"yyyyMMdd"  }}</span>
+            <button class="deleteButton" (click)="delete(item.id)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </table>
+  <!-- <button class="createButton" routerLink="/edit">Create Item</button> -->
+  <button class="createButton" (click)="add()">Add</button>
+</div>
