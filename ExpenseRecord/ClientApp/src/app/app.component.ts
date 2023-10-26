@@ -13,11 +13,11 @@ export class AppComponent {
   items: ExpenseRecordDto[] = [];
 
 
-  ngOnInit(): void {
-    this._expenseService.get().subscribe((data) => {
-      this.items = [...data];
-    })
-  }
+  // ngOnInit(): void {
+  //   // this._expenseService.get().subscribe((data) => {
+  //   //   this.items = [...data];
+  //   // })
+  // }
 
   showEditPage(b: any){
     this.showExpenseList = b as boolean;

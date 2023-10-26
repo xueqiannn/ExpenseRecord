@@ -21,7 +21,6 @@ export class ExpenseDashboardComponent implements OnInit {
   ngOnInit(): void {
     this._expenseService.get().subscribe((data) => {
       this.items = [...data];
-
     })
   }
 
@@ -31,7 +30,6 @@ export class ExpenseDashboardComponent implements OnInit {
 
   delete(id:string){
     this._expenseService.delete(id).subscribe(()=>{
-      // this.newEvent.emit(true);
       this._expenseService.get().subscribe((data) => {
         this.items = [...data];
       })
