@@ -31,8 +31,10 @@ export class ExpenseEditComponent implements OnInit {
 
   save(){
     this.model.id = UUID.UUID();
-    this._expenseService.add(this.model as ExpenseRecordDto).subscribe();
-    this.newEvent.emit(true);
+    this._expenseService.add(this.model as ExpenseRecordDto).subscribe(()=>{
+      this.newEvent.emit(true);
+    });
+
   }
 
 }
