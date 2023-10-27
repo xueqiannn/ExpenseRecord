@@ -17,7 +17,7 @@
           <td>{{item.description}}</td>
           <td>{{item.amount}}</td>
           <td>{{item.date | date:"yyyyMMdd" }}</td>
-          <button class="deleteButton" (click)="delete(item.id)">Delete</button>
+          <td><button class="deleteButton" (click)="delete(item.id)">Delete</button></td>
         </tr>
       </tbody>
     </table>
